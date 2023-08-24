@@ -11,10 +11,8 @@ function SearchBar() {
   };
   const sumbitHandler = (e) => {
     e.preventDefault();
-    if (search) {
-      navigate(`/search/${search}`);
-      setsearch("");
-    }
+    navigate(`/search/${search}`);
+    setsearch("");
   };
   return (
     <Paper
